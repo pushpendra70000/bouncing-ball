@@ -1,0 +1,34 @@
+div[data-ball1="a"]{
+    /*state*/
+    width: 400px;
+    height: 400px;
+    background:red ;
+    border: 2px solid #000;
+    border-style: dotted;
+    /*border-radius: 400px;
+*/    margin: 100px auto ;
+    transform: rotate(0deg);
+   transition: all 5s linear;
+   animation-name:abc ;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes abc{
+    from{
+        background: red;
+    transform:rotate(0deg) ;        
+    }
+
+    to{
+        background: green ;
+        transform:rotate(360deg)  ;
+    }
+
+}
+
+[data-ball1="a"]:hover{
+    background-color: aqua;
+    transform: rotate(360deg);
+
+}
